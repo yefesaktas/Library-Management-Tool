@@ -54,6 +54,6 @@ The system uses file-based storage to keep track of books and user records, ensu
 
 🔻Reads Records from the File: Opens the respective data file (e.g., book.dat, oduncKitap_kayitlari.dat, or user.dat) in read mode.
 
-🔻Prints Details: Iterates through the file records, printing out details such as barcode, book name, author, and stock for books; borrowing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;details like barcode, issue date, return date, delay, and amount due for borrowed books; and user details such as ID, name, and contact &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;information for users.
+🔻Prints Details: Iterates through the file records, printing out details such as barcode, book name, author, and stock for books; borrowing details like barcode, issue date, return date, delay, and amount due for borrowed books; and user details such as ID, name, and contact information for users.
 
 🔻Handles Errors: Checks for file reading errors and handles them appropriately by displaying an error message if necessary.
