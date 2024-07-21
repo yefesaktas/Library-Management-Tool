@@ -4,11 +4,11 @@ This system, developed using the C programming language, is aimed at efficiently
 
 Our system addresses several key functionalities necessary for daily library management, including:
 
-◽**Book Management**: Adding new books to the library’s collection, removing books that are no longer needed, and listing all books currently available.
+◽**Book Management:** Adding new books to the library’s collection, removing books that are no longer needed, and listing all books currently available.
 
-Borrowing and Returning Books: Handling the process of borrowing books, including updating stock and calculating return dates. It also manages the return process, including handling overdue books and calculating any applicable fees.
+◽**Borrowing and Returning Books:** Handling the process of borrowing books, including updating stock and calculating return dates. It also manages the return process, including handling overdue books and calculating any applicable fees.
 
-◽**User Management**: Maintaining user records, allowing for the addition, modification, and deletion of user information.
+◽**User Management:** Maintaining user records, allowing for the addition, modification, and deletion of user information.
 
 The system uses file-based storage to keep track of books and user records, ensuring that data remains persistent between sessions. It is designed to be straightforward and efficient, making it suitable for small to medium-sized libraries or as a prototype for larger systems. Each function is designed to address a specific aspect of library management, providing a complete overview of how the system handles different tasks.We will also include examples of the system's outputs to demonstrate how these functions work in practice, providing a clear picture of how the system performs its operations. Whether you're a library administrator looking for a robust tool or a student studying library management systems, this guide will help you understand the functionality and application of our system.
 
