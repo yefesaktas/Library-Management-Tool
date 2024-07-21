@@ -13,7 +13,11 @@ User Management: Maintaining user records, allowing for the addition, modificati
 The system uses file-based storage to keep track of books and user records, ensuring that data remains persistent between sessions. It is designed to be straightforward and efficient, making it suitable for small to medium-sized libraries or as a prototype for larger systems. Each function is designed to address a specific aspect of library management, providing a complete overview of how the system handles different tasks.We will also include examples of the system's outputs to demonstrate how these functions work in practice, providing a clear picture of how the system performs its operations. Whether you're a library administrator looking for a robust tool or a student studying library management systems, this guide will help you understand the functionality and application of our system.
 
 FUNCTIONS AND PURPOSES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|Function	                                                  Description	                                                                                 Example Output
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+|Function	                                                  Description	                                                                                 Example Output
 
 |add_book	                                                  Adds a new book to the library’s inventory.	                                                 "Book information saved successfully!"
 
@@ -28,4 +32,6 @@ FUNCTIONS AND PURPOSES
 |list_borrowed_books                                       	Lists all borrowed books with their details such as date of issue and return date.	         "List of borrowed books printed."
 
 |delete_user                                               	Deletes a user from the system based on their ID.	                                           "User deletion succeeded.
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
