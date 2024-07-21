@@ -14,58 +14,46 @@ The system uses file-based storage to keep track of books and user records, ensu
 
 ## Function Explanations ##
 
-1. add_book <br>
-  Purpose: Adds a new book to the library’s inventory.
+### 1. add_book ### 
+➡️ Adds a new book to the library’s inventory.
 
-How It Works:
+🔻Prompts the user to enter details like barcode, book name, author, sort, and stock. <br> 
+🔻Validates the input. <br>
+🔻Writes the new book record to the file.
 
-Prompts the user to enter details like barcode, book name, author, sort, and stock.
-Validates the input.
-Writes the new book record to the file.
+### 2. delete_book ### 
+➡️ Removes a book from the inventory based on its barcode.
 
-2. delete_book <br>
-Purpose: Removes a book from the inventory based on its barcode.
+🔻Reads the book records from the file. <br> 
+🔻Creates a new file excluding the book to be deleted. <br> 
+🔻Replaces the old file with the new one.
 
-How It Works:
+### 3. borrow_book ###
+➡️ Handles the borrowing process, updates book stock, and records borrowing details.
 
-Reads the book records from the file.
-Creates a new file excluding the book to be deleted.
-Replaces the old file with the new one.
+🔻Prompts the user to enter the date of issue. <br> 
+🔻Calculates the mandatory return date (14 days later). <br> 
+🔻Updates the book’s stock and records the borrowing details.
 
-3. borrow_book <br>
-Purpose: Handles the borrowing process, updates book stock, and records borrowing details.
+### 4. return_book ###
+➡️ Processes the return of a borrowed book, updates stock, and calculates any delay fees.
 
-How It Works:
+🔻Prompts the user to enter the book’s barcode. <br> 
+🔻Updates the stock and calculates delay fees. <br> 
+🔻Removes the record from the borrowing file.
 
-Prompts the user to enter the date of issue.
-Calculates the mandatory return date (14 days later).
-Updates the book’s stock and records the borrowing details.
+### 5. delete_user ###
+➡️ Deletes a user from the system based on their ID.
 
-4. return_book <br>
-Purpose: Processes the return of a borrowed book, updates stock, and calculates any delay fees.
+🔻Reads user records from the file. <br> 
+🔻Creates a new file excluding the user to be deleted. <br> 
+🔻Replaces the old file with the new one.
 
-How It Works:
+### 6. Listing Functions ###
+➡️ Lists what you want to list: books, borrowed books, users.
 
-Prompts the user to enter the book’s barcode.
-Updates the stock and calculates delay fees.
-Removes the record from the borrowing file.
+🔻Reads Records from the File: Opens the respective data file (e.g., book.dat, oduncKitap_kayitlari.dat, or user.dat) in read mode.
 
-5. delete_user <br>
-Purpose: Deletes a user from the system based on their ID.
+🔻Prints Details: Iterates through the file records, printing out details such as barcode, book name, author, and stock for books; borrowing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;details like barcode, issue date, return date, delay, and amount due for borrowed books; and user details such as ID, name, and contact &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;information for users.
 
-How It Works:
-
-Reads user records from the file.
-Creates a new file excluding the user to be deleted.
-Replaces the old file with the new one.
-
-6.Listing Function <br>
-Purpose: Lists what you want to list: books, borrowed books, users.
-
-How It Works:
-
-Reads Records from the File: Opens the respective data file (e.g., book.dat, oduncKitap_kayitlari.dat, or user.dat) in read mode.
-
-Prints Details: Iterates through the file records, printing out details such as barcode, book name, author, and stock for books; borrowing details like barcode, issue date, return date, delay, and amount due for borrowed books; and user details such as ID, name, and contact information for users.
-
-Handles Errors: Checks for file reading errors and handles them appropriately by displaying an error message if necessary.
+🔻Handles Errors: Checks for file reading errors and handles them appropriately by displaying an error message if necessary.
