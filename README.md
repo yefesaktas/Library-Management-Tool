@@ -10,6 +10,8 @@ Our system addresses several key functionalities necessary for daily library man
 
 ◽**User Management:** Maintaining user records, allowing for the addition, modification, and deletion of user information.
 
+![2](https://github.com/user-attachments/assets/a2fe150a-44d5-4d8e-8b15-7cbc5ce5804c)
+
 The system uses file-based storage to keep track of books and user records, ensuring that data remains persistent between sessions. It is designed to be straightforward and efficient, making it suitable for small to medium-sized libraries or as a prototype for larger systems. Each function is designed to address a specific aspect of library management, providing a complete overview of how the system handles different tasks.We will also include examples of the system's outputs to demonstrate how these functions work in practice, providing a clear picture of how the system performs its operations. Whether you're a library administrator looking for a robust tool or a student studying library management systems, this guide will help you understand the functionality and application of our system.
 
 ## Function Explanations ##
@@ -17,6 +19,7 @@ The system uses file-based storage to keep track of books and user records, ensu
 ### 1. add_book ### 
 ➡️ Adds a new book to the library’s inventory.
 
+![1](https://github.com/user-attachments/assets/8a5ddb4d-3a75-4c85-9a91-243b0962c064) <br> 
 🔻Prompts the user to enter details like barcode, book name, author, sort, and stock. <br> 
 🔻Validates the input. <br>
 🔻Writes the new book record to the file.
@@ -31,6 +34,7 @@ The system uses file-based storage to keep track of books and user records, ensu
 ### 3. borrow_book ###
 ➡️ Handles the borrowing process, updates book stock, and records borrowing details.
 
+![m2](https://github.com/user-attachments/assets/6f31ed18-a5f5-4425-8f9c-7ef4a2b959ed) <br> 
 🔻Prompts the user to enter the date of issue. <br> 
 🔻Calculates the mandatory return date (14 days later). <br> 
 🔻Updates the book’s stock and records the borrowing details.
@@ -38,6 +42,7 @@ The system uses file-based storage to keep track of books and user records, ensu
 ### 4. return_book ###
 ➡️ Processes the return of a borrowed book, updates stock, and calculates any delay fees.
 
+![m3](https://github.com/user-attachments/assets/91c94a54-c334-441c-9e7e-a0af852eb0c5) <br> 
 🔻Prompts the user to enter the book’s barcode. <br> 
 🔻Updates the stock and calculates delay fees. <br> 
 🔻Removes the record from the borrowing file.
