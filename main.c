@@ -788,8 +788,8 @@ int calc_delay(const char *zorunlu_iade_tarihi) {
     char today_date_str[11];
     strftime(today_date_str, sizeof(today_date_str), "%d/%m/%Y", &tm);
 
-    printf("Son iade tarihi: %s\n", zorunlu_iade_tarihi);
-    printf("Bugünün tarihi: %s\n", today_date_str);
+    printf("Mandatory book return date: %s\n", zorunlu_iade_tarihi);
+    printf("Today's date: %s\n", today_date_str);
 
     // Extract the day, month, and year from the today_date_str
     int today_day, today_month, today_year;
