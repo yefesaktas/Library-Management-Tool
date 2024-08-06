@@ -304,7 +304,7 @@ void register_user() {
         input_control_flag = 1;
     }
     
-    if(input_control_flag==0) {
+    if (input_control_flag==0) {
         printf("\nYou have entered the following information:\n");
         printf("    ID: %s\n", new_member.m_id);
         printf("    Name and Surname: %s\n", new_member.m_name_surname);
