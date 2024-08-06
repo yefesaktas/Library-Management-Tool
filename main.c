@@ -556,7 +556,7 @@ void add_book() {
         int flag = 0;
         int count=0;
         printf("    BARCODE (10 characters): ");
-        printf("\n%d\n",flag);
+        
         if (fgets(f_book.barcode, sizeof(f_book.barcode), stdin) != NULL&&strcmp("\n", f_book.barcode)!=0) {
             f_book.barcode[strcspn(f_book.barcode, "\n")] = '\0';
             if (strlen(f_book.barcode) != 10) {
@@ -574,8 +574,7 @@ void add_book() {
             flag = 1;}
         clear_input_buffer();
         printf("    BOOK NAME: ");
-        printf("\n%d\n",flag);
-
+        
         if(fgets(f_book.b_name,sizeof(f_book.b_name),stdin) != NULL&&strcmp("\n", f_book.b_name)!=0) {
             f_book.b_name[strcspn(f_book.b_name,"\n")]='\0';
             if(strcmp("exit", f_book.b_name) == 0) {
@@ -584,7 +583,6 @@ void add_book() {
             clear_input_buffer();
             flag = 1;}
 
-        printf("\n%d\n",flag);
         printf("    AUTHOR: ");
 
         if(fgets(f_book.author,sizeof(f_book.author),stdin) != NULL&&strcmp("\n", f_book.author)!=0) {
