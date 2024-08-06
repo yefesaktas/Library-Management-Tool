@@ -213,7 +213,7 @@ void register_user() {
     int input_control_flag = 0;
     printf("\n==== ADD A NEW MEMBER ====\n");
     // Turkish ID number
-    printf("\n%d\n",input_control_flag);
+    
     printf("    Enter the member's Turkish ID number (11 digits): ");
     if (scanf("%11s", new_member.m_id) != 1 || strlen(new_member.m_id) != 11) {
         clear_input_buffer();
@@ -224,7 +224,7 @@ void register_user() {
     }
     clear_input_buffer();
     // Name and Surname
-    printf("\n%d\n",input_control_flag);
+    
     printf("\n    Enter the member's name and surname: ");
     if (fgets(new_member.m_name_surname, sizeof(new_member.m_name_surname), stdin) != NULL) {
         new_member.m_name_surname[strcspn(new_member.m_name_surname, "\n")] = '\0';
@@ -239,7 +239,7 @@ void register_user() {
         input_control_flag = 1;
     }
     // Gender
-    printf("\n%d\n",input_control_flag);
+    
     printf("\n    Enter the member's gender (M/F): ");
     scanf("%c", &new_member.m_gender);
     if (new_member.m_gender!='M'&&new_member.m_gender!='m'&&new_member.m_gender!='F'&&new_member.m_gender!='f') {
@@ -247,7 +247,7 @@ void register_user() {
         input_control_flag = 1;
     }
     // Date of Birth
-    printf("\n%d\n",input_control_flag);
+    
     printf("\n    Enter the member's date of birth (DDMMYYYY): ");
     if (scanf("%8s", new_member.m_dateOFbirth) != 1 || strlen(new_member.m_dateOFbirth) != 8) {
         clear_input_buffer();
@@ -257,7 +257,7 @@ void register_user() {
         return;
     }
     // Phone Number
-    printf("\n%d\n",input_control_flag);
+    
     printf("\n    Enter the member's phone number (05XXXXXXXXX): ");
     if (scanf("%11s", new_member.m_tel) != 1 || strlen(new_member.m_tel) != 11) {
         clear_input_buffer();
@@ -267,7 +267,7 @@ void register_user() {
         return;
     }
     // Email Address
-    printf("\n%d\n",input_control_flag);
+    
     printf("\n    Enter the member's email address: ");
     if (scanf("%50s", new_member.m_epost) != 1||check_mail(new_member.m_epost)!=1) {
         clear_input_buffer();
@@ -277,7 +277,7 @@ void register_user() {
         return;
     }
     // Membership Date
-    printf("\n%d\n",input_control_flag);
+    
     printf("\n    Enter the membership date (DDMMYYYY): ");
     if (scanf("%8s", new_member.m_dateOFreg) != 1 || strlen(new_member.m_dateOFreg) != 8) {
         clear_input_buffer();
@@ -288,7 +288,7 @@ void register_user() {
     }
     clear_input_buffer();
     // Address
-    printf("\n%d\n",input_control_flag);
+    
     printf("\n    Enter the member's address: ");
     if (fgets(new_member.m_address, sizeof(new_member.m_address), stdin) != NULL) {
         new_member.m_address[strcspn(new_member.m_address, "\n")] = '\0';
@@ -303,7 +303,7 @@ void register_user() {
         clear_input_buffer();
         input_control_flag = 1;
     }
-    printf("\n%d\n",input_control_flag);
+    
     if(input_control_flag==0) {
         printf("\nYou have entered the following information:\n");
         printf("    ID: %s\n", new_member.m_id);
